@@ -10,7 +10,8 @@ import (
 )
 
 func main() {
-	Tutorial()
+	//Tutorial()
+	Simple()
 }
 
 func Simple() {
