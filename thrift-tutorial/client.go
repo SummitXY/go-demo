@@ -40,11 +40,6 @@ func runClient(transportFactory thrift.TTransportFactory, protocolFactory thrift
 		return err
 	}
 
-	transport, err = transportFactory.GetTransport(transport)
-	if err != nil {
-		return err
-	}
-
 	defer transport.Close()
 	if err = transport.Open(); err != nil {
 		return err
